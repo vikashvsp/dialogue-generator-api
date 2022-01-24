@@ -6,6 +6,7 @@ app=Flask(__name__)
 
 @app.route("/",methods=["GET"])
 def home():
+
     try:
         cal={"Mirzapur":[
             '"Mata ji yahan hai, Behen yahan hai, Maa-Behen ek karne mein aasani hogi.”--Munna Bhaiyya',
@@ -58,7 +59,7 @@ def home():
             "Kota Factory":[
             "Galat dikhate hain filmon mein, ki ratt ratt ke kisi ka ho raha hai selection. IIT mein chatur nahi jaate, sirf Rancho jaate hain! 3 idiots dekhi hai na?",
             "Ek baat toh hai Sir ji, Yahaan aake kisi student ka selection ho na ho, par yahaan aake bhi jiska nahi hua uska toh hona hi nahi tha",
-            "A1 stuents are my rankers. The rest are my bankers.",
+            "A1 students are my rankers. The rest are my bankers.",
             "Tum Ameer log kisi bhi din cake khaa lete ho kya?",
             "21 din mein koi bhi aadat lag jaati hai, koi bhi aadat chhoot jaati hai. Toh yehi karna hai.",
             "Bhai sahab confidence gir jaata hai, phir jitna duniya nahi samjti na utna aadmi khud ko loser samajhne lagta hai ",
@@ -72,5 +73,5 @@ def home():
         return f'Invalid'
 
 
-# if __name__=='__main__':
-#     app.run(debug=True)
+if __name__=='__main__':
+    app.run(debug=True)
